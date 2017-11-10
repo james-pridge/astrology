@@ -1,0 +1,13 @@
+<h1>Welcome to my awesome web app</h1>
+
+<% @signs.each do |sign| %>
+  <div>
+    <h2><%= sign.sign %></h2><br />
+    <i><%= sign.date %></i><br />
+    <p><%= sign.planet %></p><br />
+    <p><%= sign.description %></p><br />
+  </div>
+
+  <hr />
+
+  <% end %>
